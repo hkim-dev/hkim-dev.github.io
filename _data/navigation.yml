@@ -7,7 +7,4 @@ main:
   - title: "Tags"
     url: /tags/
 
-# breadcrumbs
-breadcrumbs: true
-
 # ref: https://mmistakes.github.io/minimal-mistakes/docs/navigation/

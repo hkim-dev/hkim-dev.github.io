@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Hyemin Kim"
   avatar           : "/assets/images/avatar.svg"
-  bio              : "Feels like I'm just starting out every day. Software Engineer | Matthew 6:21"
+  bio              : "Feels like I'm just starting out every day."
   location         : "Seoul, Korea"
   # email            : hyemink324@gmail.com
   links:
@@ -291,4 +291,4 @@ defaults:
       share: true
       related: true
 
-remote_theme : mmistakes/minimal-mistakes
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"

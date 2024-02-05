@@ -12,4 +12,4 @@ If you are interested in my professional background, please check out [my Linked
 
 [linkedin]: https://www.linkedin.com/in/hyemink
 
-![Just one of the places where I felt the happiest.](/assets/images/hogwarts.JPG)
+![hogwarts](/assets/images/hogwarts.JPG)

@@ -13,13 +13,13 @@ If you want to append data to a JSON file in Python, the `json` module is the wa
 
 1. Import the `json` module at the beginning of your script.
 
-```
+```python
 import json
 ```
 
 1. Open the JSON file using the `open()` function.
 
-```
+```python
 with open('data.json', 'r') as f:
 ```
 
@@ -27,7 +27,7 @@ The first argument is the name of the file and the mode is set to `'r'` for read
 
 1. Load the data from the JSON file into a Python object using `json.load()`.
 
-```
+```python
 data = json.load(f)
 ```
 
@@ -44,7 +44,7 @@ In this example, we're appending a dictionary with two key-value pairs to the `d
 
 1. Write the updated object back to the JSON file using `json.dump()`.
 
-```
+```python
 with open('data.json', 'w') as f:
     json.dump(data, f)
 ```

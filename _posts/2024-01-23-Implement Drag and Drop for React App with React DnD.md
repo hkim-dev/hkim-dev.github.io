@@ -198,9 +198,9 @@ const Pick: React.FC<PickProps> = ({
         [index]: item['tile'],
       }));
     },
-		canDrop: () => {
-			// logic removed
-		},
+    canDrop: () => {
+      // logic removed
+    },
     collect: (monitor) => ({
       isOver: !!monitor.isOver(),
     })

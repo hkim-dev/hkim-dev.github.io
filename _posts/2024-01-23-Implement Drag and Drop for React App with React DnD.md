@@ -2,6 +2,8 @@
 title: "Implement Drag and Drop for React App with React DnD"
 date: 2024-01-23 08:26:28 -0400
 categories: "frontend"
+header:
+  teaser: "/assets/images/app_layout.png"
 tags:
     - React
     - DnD

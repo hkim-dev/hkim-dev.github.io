@@ -2,6 +2,8 @@
 title: "Python Singleton Class for Database Connection"
 date: 2023-09-06 08:26:28 -0400
 categories: "design_pattern"
+header:
+  teaser: "/assets/images/singleton.png"
 tags:
     - Python
 ---

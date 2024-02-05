@@ -1,9 +1,15 @@
 ---
 permalink: /about/
 title: "About"
-excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
-last_modified_at: 2022-05-27T11:59:26-04:00
+excerpt: "Hyemin's Blog"
+last_modified_at: 2024-02-05T11:59:26-04:00
 toc: true
 ---
 
-Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
+I sincerely welcome you to my blog! :smiley: This space is for my small discoveries. Professionally, I’ve had the privilege to work on a wide variety of stuff, including AWS, CI/CD, UI development, etc. For this reason, I get to discover and learn so much on a daily basis. Every day is humbling and exciting.
+
+If you are interested in my professional background, please check out [my LinkedIn profile][linkedin]!
+
+[linkedin]: https://www.linkedin.com/in/hyemink
+
+![Just one of the places where I felt the happiest.](/assets/images/hogwarts.JPG)

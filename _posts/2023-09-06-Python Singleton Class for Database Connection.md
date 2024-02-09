@@ -6,7 +6,6 @@ header:
   teaser: "/assets/images/singleton.png"
 tags:
   - Python
-toc: true
 classes: wide
 ---
 ![source: https://www.javatpoint.com/singleton-design-pattern-in-python](/assets/images/singleton.png)

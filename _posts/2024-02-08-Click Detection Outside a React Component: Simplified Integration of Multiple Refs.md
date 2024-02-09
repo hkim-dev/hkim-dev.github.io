@@ -11,7 +11,7 @@ tags:
 > This article extends upon the one I wrote on [React DnD](https://hkim-dev.github.io/frontend/Implement-Drag-and-Drop-for-React-App-with-React-DnD/). Check this one out too if interested! (or for better understanding :smiley:)
 
 
-![layout](../assets/images/dnd_app_layout.jpeg)
+![layout](/assets/images/dnd_app_layout.jpeg)
 *Figure 1. Simplified Layout of React App*
 
 While enabling the click-to-fill behavior on top of Drag and Drop as per PO's request, I realized that it is almost counterintuitive not to remove UI effects appearing on a selected item **when the user has clicked outside of a desired/clickable area.** Just like how [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) is, I thought the user would expect the component to have focus when clicked, and lose it when the user has clicked something else.
@@ -44,7 +44,7 @@ Using the property `current`, you can access this DOM node.
 
 # How to Detect Clicks Outside Clickable Area
 
-![blue_layout](../assets/images/blue_highlighted_app_layout.jpeg)
+![blue_layout](/assets/images/blue_highlighted_app_layout.jpeg)
 *Figure 2. Clickable Area*
 
 Let's begin with defining what a *clickable area* is here. It really varies depending on individual use cases, but in my case, it is the blue colored area except for Picks and Tiles. The goal here is to reset a click on one of the tiles in the main grid when the consecutive click is made within the blue color background.
@@ -156,8 +156,6 @@ Personally, working on this feature led me to delve into a variety of underlying
 <br>
 
 
-#### References <br>
-<span style="font-size:12px;">
-- https://react.dev/learn/referencing-values-with-refs <br>
+#### References
+- https://react.dev/learn/referencing-values-with-refs
 - https://stackoverflow.com/questions/32553158/detect-click-outside-react-component
-</span>

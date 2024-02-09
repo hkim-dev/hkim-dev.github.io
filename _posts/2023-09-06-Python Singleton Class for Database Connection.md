@@ -5,7 +5,8 @@ categories: "design_pattern"
 header:
   teaser: "/assets/images/singleton.png"
 tags:
-    - Python
+  - Python
+toc: true
 ---
 ![source: https://www.javatpoint.com/singleton-design-pattern-in-python](/assets/images/singleton.png)
 

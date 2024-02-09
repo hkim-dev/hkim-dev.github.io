@@ -3,9 +3,10 @@ title: "Click Detection Outside a React Component: Simplified Integration of Mul
 date: 2024-02-08 15:16:28 -0400
 categories: "frontend"
 tags:
-    - React
-    - Typescript
+  - React
+  - Typescript
 classes: wide
+toc: true
 ---
 
 # Background

@@ -3,8 +3,9 @@ title: "How to Append Data to a JSON File in Python"
 date: 2022-10-23 08:26:28 -0400
 categories: "programming"
 tags:
-    - Python
-    - JSON
+- Python
+- JSON
+toc: true
 ---
 
 This article aims to explain how to append data to a JSON file with nested elements. The JSON file is structured in the following way:

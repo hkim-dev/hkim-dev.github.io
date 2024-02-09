@@ -155,3 +155,4 @@ Personally, working on this feature led me to delve into a variety of underlying
 
 ### References
 - https://react.dev/learn/referencing-values-with-refs
+- https://stackoverflow.com/questions/32553158/detect-click-outside-react-component

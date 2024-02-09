@@ -9,6 +9,7 @@ tags:
     - DnD
     - Typescript
 toc: true
+classes: wide
 ---
 
 

@@ -7,7 +7,7 @@ header:
 tags:
   - React
   - Typescript
-classes: wide
+# classes: wide
 toc: true
 ---
 
@@ -93,7 +93,7 @@ useEffect(() => {
 }, []);
 ```
 
-`handleClickOutside` checks if clickOutsideRef.current exists (i.e., if the referenced element exists in the DOM) and if the click event's target is not within the referenced element. If there is a click detected outside the referenced element, it further checks if the click has taken place within an element with the class '.pick', which is another acceptable clickable area in my case.
+`handleClickOutside` checks if `clickOutsideRef.current` exists (i.e., if the referenced element exists in the DOM) and if the click event's target is not within the referenced element. If there is a click detected outside the referenced element, it further checks if the click has taken place within an element with the class '.pick', which is another acceptable clickable area in my case.
 > [`document`](https://developer.mozilla.org/en-US/docs/Web/API/Window/document) refers to the global `Document` object provided by the browser's DOM.
 
 Make sure to pass `clickOutsideRef` to the component you wish to detect clicks outside. In my case, it's the Tile component whose elements are defined as follows:

@@ -59,7 +59,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
 search                   : true # true, false (default)
-search_full_content      : # true, false (default)
+search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
   search_within_pages    : true # true, false (default)
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Hyemin Kim"
   avatar           : "/assets/images/avatar.svg"
-  bio              : "Feels like I'm just starting out every day."
+  bio              : "Software Engineer | Lifelong Learner | Follower of Christ"
   location         : "Seoul, Korea"
   # email            : hyemink324@gmail.com
   links:
@@ -295,3 +295,4 @@ defaults:
       share: true
       related: true
       show_date: true
+      classes: wide

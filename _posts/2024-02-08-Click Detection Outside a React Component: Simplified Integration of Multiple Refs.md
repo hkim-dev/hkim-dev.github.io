@@ -2,6 +2,8 @@
 title: "Click Detection Outside a React Component: Simplified Integration of Multiple Refs"
 date: 2024-02-08 15:16:28 -0400
 categories: "frontend"
+header:
+  teaser: "/assets/images/blue_highlighted_app_layout.jpeg"
 tags:
   - React
   - Typescript

@@ -5,6 +5,7 @@ categories: "frontend"
 tags:
     - React
     - Typescript
+classes: wide
 ---
 
 # Background

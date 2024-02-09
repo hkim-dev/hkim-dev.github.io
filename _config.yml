@@ -106,8 +106,7 @@ analytics:
 author:
   name             : "Hyemin Kim"
   avatar           : "/assets/images/avatar.svg"
-  bio              : >
-    Software Engineer | Lifelong Learner | Follower of Christ"
+  bio              : "Software Engineer, Lifelong Learner, Follower of Christ"
   location         : "Seoul, Korea"
   # email            : hyemink324@gmail.com
   links:

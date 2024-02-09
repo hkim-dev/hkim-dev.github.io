@@ -116,7 +116,7 @@ You have probably notice that the ref as the `ref` attribute is something else, 
 
 
 ## Merging Multiple Refs
-It was initially puzzling as to how I could make `Tile` draggable and able to detect outside clicks at the same time when it already uses a `drag` ref. (reference: [my previous article on React DnD] (https://hkim-dev.github.io/frontend/Implement-Drag-and-Drop-for-React-App-with-React-DnD/)) A few articles I stumbled upon helped me greatly in integrating those two refs, possibly more than two if needed in the future:
+It was initially puzzling as to how I could make `Tile` draggable and able to detect outside clicks at the same time when [it already uses a `drag` ref.] (https://hkim-dev.github.io/frontend/Implement-Drag-and-Drop-for-React-App-with-React-DnD/#set-up-draggable-component) A few articles I stumbled upon helped me greatly in integrating those two refs, possibly more than two if needed in the future:
 - [How to merge refs in React component](https://mayursinhsarvaiya.medium.com/how-to-merge-refs-in-react-component-d5e4623b6924)
 - [Using multiple refs on a single React element](https://stackoverflow.com/questions/60270678/using-multiple-refs-on-a-single-react-element)
 

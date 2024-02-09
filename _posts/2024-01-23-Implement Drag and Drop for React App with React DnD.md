@@ -19,7 +19,7 @@ I was quite new to the realm of UI/UX development when I first joined my team. A
 
 Simply put, like a lot of modern apps do, we need to enable users’ selection for the app. In the middle, the app contains as many as 100 items in a grid. The user chooses items from the grid and the selected ones appear in a list that saves the user’s choices. The simplified layout of the app would look like the below figure:
 
-![layout](/assets/images/app_layout.jpeg)
+![layout](assets/images/dnd_app_layout.jpeg)
 *Figure 1. Simplified Layout of React App*
 
 My discretion was that the most intuitive approach here to allow the user to select items was using drag and drop.
@@ -116,7 +116,7 @@ const Tile: React.FC<TileProps> = ({
 
   return (
     <div
-      ref={isDropped ? undefined : drag}
+      ref={drag}
       id={`tile-${index}`}
       key={index}
       className={`transform hover:scale-110 transition-transform duration-300 // increase the size on hover

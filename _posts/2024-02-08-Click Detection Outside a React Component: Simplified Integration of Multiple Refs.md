@@ -53,7 +53,7 @@ Using the property `current`, you can access this DOM node.
 |:--:|
 | *Figure 2. Clickable Area* |
 
-Let's begin with defining what a *clickable area* is here. It really varies depending on individual use cases, but in my case, it is the blue colored area except for Picks and Tiles. The goal here is to reset a click on one of the tiles in the main grid when the consecutive click is made within the blue color background.
+Let me clarify what a *clickable area* is here. It really varies depending on individual use cases, but in my case, it is the blue colored area except for Picks and Tiles. The goal is to reset a click on one of the tiles in the main grid when the next click is made within the blue color background.
 
 Another important question - what does a click does to the UI?
 
@@ -118,7 +118,7 @@ Make sure to pass `clickOutsideRef` to the component you wish to detect clicks o
 </div>
 ```
 
-You have probably notice that the ref as the `ref` attribute is something else, other than `clickOutsideRef`. Where did it come from? Hopefully the name `mergedRef` has tipped you off a little bit. I'll explain about merging multiple refs assuming any of you already have a ref attached to the element that you need to add another ref to, like I did.
+You may have noticed that the ref as the `ref` attribute is something else, other than `clickOutsideRef`. Where did it come from? The name `mergedRef` might have hinted at its purpose. I'll explain about merging multiple refs assuming any of you already have a ref attached to the element that you need to add another ref to, like I did.
 
 
 ## Merging Multiple Refs

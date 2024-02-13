@@ -1,5 +1,5 @@
 ---
-title: "Click Detection Outside a React Component: Simplified Integration of Multiple Refs"
+title: "Click Detection Outside a React Component: Simple Integration of Multiple Refs"
 date: 2024-02-08 15:16:28 -0400
 categories: "frontend"
 header:

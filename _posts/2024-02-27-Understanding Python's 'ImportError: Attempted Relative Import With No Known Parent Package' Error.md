@@ -10,9 +10,10 @@ tags:
 toc: true
 ---
 
-#### TL;DR: *Use absolute imports or run your script as a module using `python -m`*!
 
 ![vscode-captured](/assets/images/vscode-relative-import.png)
+
+##### TL;DR: *Use absolute imports or run your script as a module using `python -m`*!
 
 
 # Background

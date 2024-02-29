@@ -161,8 +161,4 @@ The `__package__` attribute is set to `package.tests`, providing Python with the
 
 # Wrapping Up
 
-| ![comment](/assets/images/relative-import-comment.png) |
-|:--:|
-| *Someone on the Internet once said...* |
-
 You've reached the end of this article! Good job! :confetti_ball: As much as importing in Python can be confusing, I believe understanding how it works gives you a clearer view of Python's module/package system. I also recommend exploring the docs linked in this article for deeper understanding. Happy coding! :raised_hands:

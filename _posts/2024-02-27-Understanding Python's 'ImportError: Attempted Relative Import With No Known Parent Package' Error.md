@@ -13,7 +13,7 @@ toc: true
 
 ![vscode-captured](/assets/images/vscode-relative-import.png)
 
-**TL;DR: *Use absolute imports or run your script as a module using `python -m`!**
+**TL;DR: Use absolute imports or run your script as a module using `python -m`!**
 <br>
 
 # Background
@@ -165,4 +165,4 @@ The `__package__` attribute is set to `package.tests`, providing Python with the
 |:--:|
 | *Someone on the Internet once said...* |
 
-You've reached the end of this article! Good job! :confetti_ball: As much as importing in Python can be confusing, I believe understanding how it works gives you a clearer view of Python's module/package system. I additionally recommend exploring the docs linked in this article for deeper understanding. Happy coding! :raised_hands:
+You've reached the end of this article! Good job! :confetti_ball: As much as importing in Python can be confusing, I believe understanding how it works gives you a clearer view of Python's module/package system. I also recommend exploring the docs linked in this article for deeper understanding. Happy coding! :raised_hands:

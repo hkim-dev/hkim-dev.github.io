@@ -13,8 +13,8 @@ toc: true
 
 ![vscode-captured](/assets/images/vscode-relative-import.png)
 
-##### TL;DR: *Use absolute imports or run your script as a module using `python -m`*!
-
+**TL;DR: *Use absolute imports or run your script as a module using `python -m`!**
+<br>
 
 # Background
 Creating a local Python package was a blast until I ran into this error: **ImportError: Attempted Relative Import With No Known Parent Package**. Trying to make sense of articles and StackOverflow posts about it felt like decoding hieroglyphs. In this article, I'll break down what causes this error and how to fix it, using a simple example that anyone can follow.
@@ -24,7 +24,7 @@ Creating a local Python package was a blast until I ran into this error: **Impor
 2. Package: A directory containing Python modules.
 3. Script: A Python program meant to be directly executed.
 
-> **_NOTE_:** `__init__.py` used to be required to be part of a package but not anymore from Python 3.3 onwards. See (PEP 420)[https://peps.python.org/pep-0420/] for more information.
+> **_NOTE_:** `__init__.py` used to be required to be part of a package but not anymore from Python 3.3 onwards. See [PEP 420](https://peps.python.org/pep-0420/) for more information.
 
 ## Relative Imports in Python
 

@@ -80,7 +80,7 @@ const handleClickOutside = (event: MouseEvent) => {
   if (clickOutsideRef.current && !clickOutsideRef.current.contains(event.target as HTMLElement)) {
     const isClickOnPick = !!event.target && (event.target as HTMLElement).closest('.pick'); // Check if the click occurred within a Pick component
     if (!isClickOnPick) { // click occurred outside of Pick, completely reset the behaviors related to tile clicks
-      setClickedChampion(null);
+      setClickedTile(null);
     };
     setIsClicked(false);
   };

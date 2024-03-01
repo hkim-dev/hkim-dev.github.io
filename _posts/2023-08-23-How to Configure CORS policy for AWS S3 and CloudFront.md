@@ -19,6 +19,7 @@ CORS (Cross-Origin Resource Sharing) configuration is crucial for web developmen
 # S3 Bucket IAM Policy
 
 > Access to XMLHttpRequest at 'https://example.com' from origin 'http://localhost:3000' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+
 When encountering CORS errors like "Access to XMLHttpRequest has been blocked by CORS policy", configuring the S3 bucket's IAM policy is the first step to resolve them. This policy specifies which entities can access resources within the S3 bucket.
 
 To set up the IAM policy:

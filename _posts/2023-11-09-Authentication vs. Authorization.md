@@ -8,6 +8,7 @@ tags:
     - authentication
     - authorization
 toc: true
+toc_sticky: true
 ---
 
 ![auths](/assets/images/auth.png)

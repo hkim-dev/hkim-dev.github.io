@@ -6,6 +6,7 @@ tags:
 - Python
 - JSON
 toc: true
+toc_sticky: true
 ---
 
 This article aims to explain how to append data to a JSON file with nested elements. The JSON file is structured in the following way:

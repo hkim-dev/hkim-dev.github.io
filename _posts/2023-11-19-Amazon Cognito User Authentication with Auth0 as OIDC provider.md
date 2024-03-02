@@ -89,15 +89,9 @@ This integration brings flexibility, scalability, and compliance with regulation
 
 
 ##### references:
-
-<https://auth0.com/intro-to-iam/what-is-openid-connect-oidc>
-
-<https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-federation.html>
-
-<https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-provider.html#cognito-user-pools-oidc-providers>
-
-<https://docs.aws.amazon.com/cognito/latest/developerguide/tutorial-create-user-pool.html>
-
-<https://aws.amazon.com/blogs/security/use-the-hosted-ui-or-create-a-custom-ui-in-amazon-cognito/>
-
-<https://hyprstack.medium.com/reactjs-aws-cognito-authentication-with-auth0-f3f16094fa8>
+- <https://auth0.com/intro-to-iam/what-is-openid-connect-oidc>
+- <https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-federation.html>
+- <https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-provider.html#cognito-user-pools-oidc-providers>
+- <https://docs.aws.amazon.com/cognito/latest/developerguide/tutorial-create-user-pool.html>
+- <https://aws.amazon.com/blogs/security/use-the-hosted-ui-or-create-a-custom-ui-in-amazon-cognito/>
+- <https://hyprstack.medium.com/reactjs-aws-cognito-authentication-with-auth0-f3f16094fa8>

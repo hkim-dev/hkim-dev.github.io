@@ -33,7 +33,7 @@ Amazon Cognito serves as both a user directory and an OAuth 2.0 identity provide
 
 Your IdPs pass an OIDC ID token or a SAML assertion to Amazon Cognito. Amazon Cognito reads the claims about your user in the token or assertion and maps those claims to a new user profile within your user pool directory.
 
-Amazon Cognito then creates a user profile for your federated user in its own directory. Amazon Cognito adds attributes to your user based on the claims from your IdP and, in the case of OIDC and social identity providers, an IdP-operated public `[userinfo` endpoint](https://docs.aws.amazon.com/cognito/latest/developerguide/userinfo-endpoint.html).
+Amazon Cognito then creates a user profile for your federated user in its own directory. Amazon Cognito adds attributes to your user based on the claims from your IdP and, in the case of OIDC and social identity providers, an IdP-operated public [`userinfo` endpoint](https://docs.aws.amazon.com/cognito/latest/developerguide/userinfo-endpoint.html).
 
 Once a profile for your federated user is created within Amazon Cognito's directory, it assumes the role of the IdP for your application, which now functions as the SP. Amazon Cognito is a combination of OIDC and OAuth 2.0 IdP. It generates access tokens, ID tokens, and refresh tokens.
 
@@ -91,8 +91,13 @@ This integration brings flexibility, scalability, and compliance with regulation
 ##### references:
 
 <https://auth0.com/intro-to-iam/what-is-openid-connect-oidc>
+
 <https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-federation.html>
+
 <https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-provider.html#cognito-user-pools-oidc-providers>
+
 <https://docs.aws.amazon.com/cognito/latest/developerguide/tutorial-create-user-pool.html>
+
 <https://aws.amazon.com/blogs/security/use-the-hosted-ui-or-create-a-custom-ui-in-amazon-cognito/>
+
 <https://hyprstack.medium.com/reactjs-aws-cognito-authentication-with-auth0-f3f16094fa8>

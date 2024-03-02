@@ -20,7 +20,7 @@ toc_sticky: true
 |:--:|
 | *Figure 1. Simplified Layout of React App* |
 
-While enabling the click-to-fill behavior on top of Drag and Drop as per PO's request, I realized that it is almost counterintuitive not to remove UI effects appearing on a selected item **when the user has clicked outside of a desired/clickable area.** Just like how [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) is, I thought the user would expect the component to have focus when clicked, and lose it when the user has clicked something else.
+While enabling the click-to-fill behavior on top of Drag and Drop, I realized that it is almost counterintuitive not to remove UI effects appearing on a selected item **when the user has clicked outside of a desired/clickable area.** Just like how [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) is, I thought the user would expect the component to have focus when clicked, and lose it when the user has clicked something else.
 I hope this curation of the discoveries I made while working on the feature can be a thorough guide of the subject matter. Now let's start with the concept of React Ref.
 
 

@@ -16,17 +16,17 @@ toc_sticky: true
 
 # Background
 
-I was quite new to the realm of UI/UX development when I first joined my team. After a fair amount of stumbling and hair-pulling, UI development finally started growing on me. Drag and Drop is one of the early features of the app I got to work on, and in this article, I would like to articulate things I learned along the way.
+I was quite new to the realm of UI/UX development when I first joined my team. Drag and Drop is one of the early features of the app I got to work on, and in this article, I would like to articulate things I learned along the way.
 
 ## Why DnD?
 
-Simply put, like a lot of modern apps do, we need to enable users’ selection for the app. In the middle, the app contains as many as 100 items in a grid. The user chooses items from the grid and the selected ones appear in a list that saves the user’s choices. The simplified layout of the app would look like the below figure:
+The below figure is the simplified layout of the React app I've been working on. In the middle, the app contains as many as 100 items in a grid. The user chooses items from the grid and the selected ones appear in a list that saves the user’s choices. 
 
 ![layout](/assets/images/dnd_app_layout.jpeg)
 
 *Figure 1. Simplified Layout of React App*
 
-My discretion was that the most intuitive approach here to allow the user to select items was using drag and drop.
+My discretion was that the most intuitive approach here is to allow the user to select tiles using drag and drop.
 In the following section, we'll find out how to actually implement the feature for React apps.
 
 # Implement Drag and Drop with [React DnD](https://react-dnd.github.io/react-dnd/about)

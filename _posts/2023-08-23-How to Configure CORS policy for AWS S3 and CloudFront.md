@@ -12,7 +12,9 @@ toc_sticky: true
 
 # Background
 
-![aws tech stack](/assets/images/s3-cloudfront-tech-stack.png)
+| ![aws tech stack](/assets/images/s3-cloudfront-tech-stack.png) |
+|:--:|
+| source: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-a-react-based-single-page-application-to-amazon-s3-and-cloudfront.html |
 
 CORS (Cross-Origin Resource Sharing) configuration is crucial for web development projects, as it enables secure interaction between resources served from different domains. In this guide, we'll delve into configuring CORS policies for AWS S3 and CloudFront to address the commonly encountered 'blocked by CORS policy' error. By following these steps, you can ensure seamless cross-origin requests and mitigate CORS-related issues effectively.
 

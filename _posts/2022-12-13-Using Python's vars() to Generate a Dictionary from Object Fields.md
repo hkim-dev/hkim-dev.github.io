@@ -10,7 +10,7 @@ toc: true
 toc_sticky: true
 ---
 
-# vars() function
+# `vars()` function
 
 Let’s consider the following example:
 
@@ -21,14 +21,14 @@ class Foo:
 		self.b = 2
 ```
 
-The vars() function in Python returns the **`__dict__`** attribute of an object, which is a dictionary containing the object's attributes and their values. In the example code provided, vars(foo) returns {'a': 1, 'b': 2} because foo is an instance of the Foo class, which has attributes a and b.
+The `vars()` function in Python returns the **`__dict__`** attribute of an object, which is a dictionary containing the object's attributes and their values. In the example code provided, `vars(foo)` returns `{'a': 1, 'b': 2}` because foo is an instance of the Foo class, which has attributes a and b.
 
 ```python
 foo = Foo()
 print(vars(foo))  # Output: {'a': 1, 'b': 2}
 ```
 
-This demonstrates how you can use the vars() function to inspect the attributes of an object dynamically. It's particularly useful when you need to introspect objects or manipulate their attributes programmatically.
+This demonstrates how you can use the `vars()` function to inspect the attributes of an object dynamically. It's particularly useful when you need to introspect objects or manipulate their attributes programmatically.
 
 # Modifying Object Attributes
 

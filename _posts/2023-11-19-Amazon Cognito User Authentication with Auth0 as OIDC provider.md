@@ -12,7 +12,7 @@ toc_sticky: true
 
 | ![cognito-user-identity-pools](/assets/images/cognito-teaser.png) |
 |:--:|
-| *source: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html* |
+| *source: <https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html>* |
 
 
 # Background
@@ -43,17 +43,17 @@ Once a profile for your federated user is created within Amazon Cognito's direct
 To configure a user pool for an OIDC identity provider:
 
 1. Navigate to the [Amazon Cognito console](https://console.aws.amazon.com/cognito/home) and select **Create user pool**.
-2. In step 1 Configure sign-in experience, choose Federated identity providers for provider types and OpenID Connect provider out of the federated sign-in options.
+2. In Step 1 Configure sign-in experience, choose Federated identity providers for provider types and OpenID Connect provider out of the federated sign-in options.
 
 ![capture 1](/assets/images/cognito-capture-1.png)
 
-1. Configure security requirements, sign-up experience, and message delivery according to your requirements.
-2. In the fifth step, enter the client ID and client secret. In the Auth0 dashboard, go to applications and choose the app of your choice. Retrieve your client ID and client secret in the settings page. Set the **attributes request method** to POST. For the issuer URL, enter the value under Domain. Refer to this guide for more information: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-provider.html#cognito-user-pools-oidc-providers
+3. Configure security requirements, sign-up experience, and message delivery according to your requirements.
+4. In Step 5, enter the client ID and client secret. In the Auth0 dashboard, go to applications and choose the app of your choice. Retrieve your client ID and client secret in the settings page. Set the **attributes request method** to POST. For the issuer URL, enter the value under Domain. Refer to this guide for more information: <https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-provider.html#cognito-user-pools-oidc-providers>
 
 ![capture 2](/assets/images/cognito-capture-2.png)
 
-1. In the sixth step, give your user pool a suitable name. As for the app client section, refer to this: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html
-2. Review the changes and create the user pool.
+5. In Step 6, give your user pool a suitable name. As for the app client section, refer to this: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html
+6. Review the changes and create the user pool.
 
 # Creating New OIDC Provider in AWS
 
@@ -90,9 +90,9 @@ This integration brings flexibility, scalability, and compliance with regulation
 
 ##### references:
 
-https://auth0.com/intro-to-iam/what-is-openid-connect-oidc
-https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-federation.html
-https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-provider.html#cognito-user-pools-oidc-providers
-https://docs.aws.amazon.com/cognito/latest/developerguide/tutorial-create-user-pool.html
-https://aws.amazon.com/blogs/security/use-the-hosted-ui-or-create-a-custom-ui-in-amazon-cognito/
-https://hyprstack.medium.com/reactjs-aws-cognito-authentication-with-auth0-f3f16094fa8
+<https://auth0.com/intro-to-iam/what-is-openid-connect-oidc>
+<https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-federation.html>
+<https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-provider.html#cognito-user-pools-oidc-providers>
+<https://docs.aws.amazon.com/cognito/latest/developerguide/tutorial-create-user-pool.html>
+<https://aws.amazon.com/blogs/security/use-the-hosted-ui-or-create-a-custom-ui-in-amazon-cognito/>
+<https://hyprstack.medium.com/reactjs-aws-cognito-authentication-with-auth0-f3f16094fa8>

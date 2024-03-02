@@ -45,12 +45,12 @@ To configure a user pool for an OIDC identity provider:
 1. Navigate to the [Amazon Cognito console](https://console.aws.amazon.com/cognito/home) and select **Create user pool**.
 2. In Step 1 Configure sign-in experience, choose Federated identity providers for provider types and OpenID Connect provider out of the federated sign-in options.
 
-![capture 1](/assets/images/cognito-capture-1.png)
+    ![capture 1](/assets/images/cognito-capture-1.png)
 
 3. Configure security requirements, sign-up experience, and message delivery according to your requirements.
 4. In Step 5, enter the client ID and client secret. In the Auth0 dashboard, go to applications and choose the app of your choice. Retrieve your client ID and client secret in the settings page. Set the **attributes request method** to POST. For the issuer URL, enter the value under Domain. Refer to this guide for more information: <https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-provider.html#cognito-user-pools-oidc-providers>
 
-![capture 2](/assets/images/cognito-capture-2.png)
+    ![capture 2](/assets/images/cognito-capture-2.png)
 
 5. In Step 6, give your user pool a suitable name. As for the app client section, refer to this: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html
 6. Review the changes and create the user pool.

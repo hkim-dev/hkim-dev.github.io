@@ -71,7 +71,7 @@ As briefly explained in the background part, OpenID Connect is built directly on
 It is widely adopted, with support from various identity providers, [both open-source and commercial](https://oauth.net/code/). OAuth's authorization framework, when combined with OIDC's identity layer, provides a robust solution for handling authentication and authorization. In the ever-evolving landscape of user authentication, OAuth and OpenID Connect have emerged as integral components, ensuring secure and efficient interactions between applications and identity providers.
 
 
-#### references:
+##### references:
 
-- https://openid.net/developers/how-connect-works/
-- https://oauth.net/articles/authentication/
+- <https://openid.net/developers/how-connect-works/>
+- <https://oauth.net/articles/authentication/>

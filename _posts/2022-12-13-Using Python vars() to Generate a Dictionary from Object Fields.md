@@ -1,5 +1,5 @@
 ---
-title: "Using Python's vars() to Generate a Dictionary from Object Fields"
+title: "Using Python vars() to Generate a Dictionary from Object Fields"
 date: 2022-12-13 15:00:00 -0400
 categories: "programming"
 header:

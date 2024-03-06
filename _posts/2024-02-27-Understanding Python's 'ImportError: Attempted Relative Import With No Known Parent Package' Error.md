@@ -70,7 +70,7 @@ def test_add():
 
 What will happen when you try to directly run the test script (i.e., `python subpackage/module2.py`)? You'll get the dreaded "ImportError: Attempted Relative Import With No Known Parent Package" error. Why? Remember that relative imports are resolved based on the [`__package__`](https://peps.python.org/pep-0366/#proposed-change) attribute. The attribute provides **information about the package to which a module belongs.** `__package__` is set to `None` when a .py file is run as a script. With `__package__` being None, Python doesn't recognize that `module2.py` is part of a package and rather treats it as a standalone script. Hence the *no known parent package* error!
 
-> **_NOTE 1:_** `sys.path` contains the module search path initialized when Python starts. Please read more about it in this link: https://docs.python.org/3/library/sys_path_init.html
+> **_NOTE 1:_** `sys.path` contains the module search path initialized when Python starts. Please read more about it in this link: <https://docs.python.org/3/library/sys_path_init.html>
 
 > **_NOTE 2:_** You can add search paths to [`sys.path`](https://docs.python.org/3/library/sys.html#sys.path). Another alternative is modifying the [PYTHONPATH](https://docs.python.org/3/using/cmdline.html#envvar-PYTHONPATH) environment variable. Read more about them in the linked documentations. While modifying those can be a workaround for the introduced error, I personally don't find it advisable as it affects the entire Python runtime environment. My two cents here is that manual modifications to either `sys.path` or `PYTHONPATH` make it difficult to manage the code.
 

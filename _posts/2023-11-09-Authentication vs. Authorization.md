@@ -48,7 +48,7 @@ In the context of authentication and authorization, [OAuth](https://oauth.net/2/
 
 By separating the concerns of authentication and authorization, OAuth 2.0 provides a robust framework that enhances security and scalability. It allows the authentication process to happen independently of the authorization process, providing flexibility and enabling seamless integration with various identity providers.
 
-#### references:
-- https://www.bu.edu/tech/about/security-resources/bestpractice/auth/
-- https://oauth.net/2/access-tokens/
-- https://www.okta.com/identity-101/authentication-vs-authorization/
+##### references:
+- <https://www.bu.edu/tech/about/security-resources/bestpractice/auth/>
+- <https://oauth.net/2/access-tokens/>
+- <https://www.okta.com/identity-101/authentication-vs-authorization/>

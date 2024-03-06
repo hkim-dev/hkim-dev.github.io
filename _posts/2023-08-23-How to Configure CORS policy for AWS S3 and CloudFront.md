@@ -105,6 +105,6 @@ Tada! The response header includes the ‘Access-Control-Allow-Origin’ header 
 ![capture 4](/assets/images/s3-cloudfront-4.png)
 
 
-###### References
-- https://stackoverflow.com/a/75689372/22432150
-- https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html
+##### References
+- <https://stackoverflow.com/a/75689372/22432150>
+- <https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html>

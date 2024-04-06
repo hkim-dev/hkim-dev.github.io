@@ -57,14 +57,21 @@ However, it is clearly stated in the latest documentation that the use of `git f
 
 
 Alternatively, we can use [git filter-repo](https://github.com/newren/git-filter-repo/). This is actually the history filtering tool Git recommends using. Install the tool first using your favorite package manager such as `pip` or `brew`. 
-```brew install git-filter-repo```
+Install it by running
+```
+brew install git-filter-repo
+```
 or
-```pip install git-filter-repo```
-For a more detailed installation guide, visit this link: https://github.com/newren/git-filter-repo/blob/main/INSTALL.md.
+```
+pip install git-filter-repo
+```
+For a more detailed installation guide, visit this [link](https://github.com/newren/git-filter-repo/blob/main/INSTALL.md).
 
 
 Run the `git filter-repo` command like the following:
-```git filter-repo --path path/to/file/large_file --invert-paths --force```
+```
+git filter-repo --path path/to/file/large_file --invert-paths --force
+```
 The `--path` option specifies the path to the file you want to remove.
 
 

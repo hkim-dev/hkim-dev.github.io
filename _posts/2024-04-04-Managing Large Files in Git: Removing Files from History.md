@@ -48,7 +48,9 @@ You'll get an output similar to the following:
 ## 2. Remove the file from history
 Using the `git filter-branch` command, rewrite the revision history of your Git repository, allowing you to modify the files, commits, etc. 
 
-```git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch path/to/file/large_file'```
+```
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch path/to/file/large_file'
+```
 
 The `--index-filter` option specifies the filter to apply to the index of each revision. The filter is defined as the command `git rm --cached --ignore-unmatch path/to/file/large_file.json`. This command removes the specified file from the index. The `--cached` option is used to ensure that the file is only removed from the index and not from the working directory.
 
@@ -72,7 +74,7 @@ Run the `git filter-repo` command like the following:
 ```
 git filter-repo --path path/to/file/large_file --invert-paths --force
 ```
-The `--path` option specifies the path to the file you want to remove.
+With the `--path` option, specify the path to the file you want to remove.
 
 
 

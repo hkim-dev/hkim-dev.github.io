@@ -79,6 +79,6 @@ With the `--path` option, specify the path to the file you want to remove.
 
 
 ##### References
-- https://stackoverflow.com/questions/33330771/git-lfs-this-exceeds-githubs-file-size-limit-of-100-00-mb
-- https://git-scm.com/docs/git-filter-branch
-- https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
+- <https://stackoverflow.com/questions/33330771/git-lfs-this-exceeds-githubs-file-size-limit-of-100-00-mb>
+- <https://git-scm.com/docs/git-filter-branch>
+- <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository>

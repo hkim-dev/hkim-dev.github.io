@@ -36,7 +36,7 @@ error: failed to push some refs to 'https://gitlab.com/hyemin-dev/large-file-tes
 
 To resolve the issue of exceeding the blob size limit on Gitlab, follow these steps:
 
-1. Identify the large file
+## 1. Identify the large file
 As suggested in the error message, use the following command to identify the file path:
 `git ls-tree -r HEAD | grep $BLOB_ID`
 
@@ -45,7 +45,7 @@ You'll get an output similar to the following:
 100644 blob 7e11e38cda9301485d0584b9accbe9128d9747c1	path/to/file/large_file.json
 ```
 
-2. Remove the file from history
+## 2. Remove the file from history
 Using the `git filter-branch` command, rewrite the revision history of your Git repository, allowing you to modify the files, commits, etc. 
 
 ```git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch path/to/file/large_file'```

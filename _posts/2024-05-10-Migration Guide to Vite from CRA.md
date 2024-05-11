@@ -89,7 +89,6 @@ For more details about configuration options for Vite, visit: [Vite Configuratio
 That’s it. With these simple steps, you have moved away from CRA to Vite. You can now start a dev server for your React app with `npm start`.
 
 
-<br><br>
 
 # Extras
 

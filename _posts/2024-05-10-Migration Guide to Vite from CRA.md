@@ -20,12 +20,12 @@ Create React App (CRA) has long served as a reliable starting point for React pr
 # Migration Steps
 
 ### 1. First, remove CRA from your project.
-  ```bash
-  npm uninstall react-scripts
-  ```
+```shell
+npm uninstall react-scripts
+```
 
 ### 2. Install Vite dependencies.
-```bash
+```shell
 npm install vite @vitejs/plugin-react --save-dev
 ```
 
@@ -98,12 +98,12 @@ That’s it. With these simple steps, you have moved away from CRA to Vite. You 
 If you have been using Tailwind CSS with CRA, you can easily set up Tailwind CSS in a Vite project following these steps:
 
 #### 1. Install required dependencies.
-```bash
+```shell
 npm install -D tailwindcss postcss autoprefixer
 ```
 
 #### 2. Create `tailwind.config.js` and `postcss.config.js` with the following command.
-```bash
+```shell
 npx tailwindcss init -p
 ```
 

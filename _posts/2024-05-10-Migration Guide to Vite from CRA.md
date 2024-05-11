@@ -18,19 +18,19 @@ Create React App (CRA) has long served as a reliable starting point for React pr
 
 # Migration Steps
 
-## 1. First, remove CRA from your project.
+### 1. First, remove CRA from your project.
   ```bash
   npm uninstall react-scripts
   ```
 
-## 2. Install Vite dependencies.
+### 2. Install Vite dependencies.
 ```bash
 npm install vite @vitejs/plugin-react --save-dev
 ```
 
 For more information on Vite plugins, visit: [Vite Plugins Documentation](https://main.vitejs.dev/plugins/).
 
-## 3. Modify your `package.json` and add the following scripts.
+### 3. Modify your `package.json` and add the following scripts.
 ```json
 {
   "scripts": {
@@ -41,13 +41,13 @@ For more information on Vite plugins, visit: [Vite Plugins Documentation](https:
 }
 ```
 
-## 4. Move `index.html` to the root directory.
+### 4. Move `index.html` to the root directory.
 CRA uses `public/index.html` for the default entry point, while Vite looks for the file in the root directory. 
 ```bash
 mv public/index.html .
 ```
 
-## 5. Update the script tag in your `index.html` to link the `index.tsx` file.
+### 5. Update the script tag in your `index.html` to link the `index.tsx` file.
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -62,7 +62,7 @@ mv public/index.html .
 </html>
 ```
 
-## 6. Create `vite.config.ts` at the root of your project.
+### 6. Create `vite.config.ts` at the root of your project.
 ```tsx
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
@@ -89,37 +89,36 @@ For more details about configuration options for Vite, visit: [Vite Configuratio
 That’s it. With these simple steps, you have moved away from CRA to Vite. You can now start a dev server for your React app with `npm start`.
 
 
-
+<br><br>
 # Extras
 
 ## Install Tailwind CSS in a Vite Project
-
 If you have been using Tailwind CSS with CRA, you can easily set up Tailwind CSS in a Vite project following these steps:
 
-1. Install required dependencies.
-  ```bash
-  npm install -D tailwindcss postcss autoprefixer
-  ```
+#### 1. Install required dependencies.
+```bash
+npm install -D tailwindcss postcss autoprefixer
+```
 
-2. Create `tailwind.config.js` and `postcss.config.js` with the following command.
-  ```bash
-  npx tailwindcss init -p
-  ```
+#### 2. Create `tailwind.config.js` and `postcss.config.js` with the following command.
+```bash
+npx tailwindcss init -p
+```
 
-3. Add your template files to `tailwind.config.js`.
-  ```bash
-  /** @type {import('tailwindcss').Config} */
-  export default {
-    content: [
-      "./index.html",
-      "./src/**/*.{js,ts,jsx,tsx}",
-    ],
-    theme: {
-      extend: {},
-    },
-    plugins: [],
-  }
-  ```
+#### 3. Add your template files to `tailwind.config.js`.
+```bash
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
 
 ## Path Mapping
 
@@ -142,7 +141,7 @@ You can set up path mapping in tsconfig.json like this:
 
 Then you can import modules using the path aliases in code files:
 
-```json
+```tsx
 import { Button } from '@components/Button';
 import { Header } from '@components/Header';
 import Home from '@pages/Home';
@@ -154,34 +153,34 @@ More details can be found here: <https://www.typescriptlang.org/tsconfig/#paths>
 
 To use alias imports in a Vite project, you either add the aliases to the `resolve.alias` option or simply use a plugin.
 
-1. Add aliases to vite.config.ts.
-  ```tsx
-  import { defineConfig } from 'vite'
-  import react from '@vitejs/plugin-react'
+#### 1. Add aliases to vite.config.ts.
+```tsx
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-  export default defineConfig({
-    plugins: [react()],
-    resolve: {
-      alias: {
-        "@components": path.resolve(__dirname, "src/components"),
-        "@pages": path.resolve(__dirname, "src/pages"),
-        "@utils": path.resolve(__dirname, "src/utils")
-      },
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@components": path.resolve(__dirname, "src/components"),
+      "@pages": path.resolve(__dirname, "src/pages"),
+      "@utils": path.resolve(__dirname, "src/utils")
     },
-  });
-  ```
+  },
+});
+```
 
-2. Or, simply use this plugin: [vite-tsconfig-paths](https://www.npmjs.com/package/vite-tsconfig-paths)
-  ```tsx
-  import { defineConfig } from 'vite'
-  import react from '@vitejs/plugin-react'
-  import tsconfigPaths from 'vite-tsconfig-paths';
+#### 2. Or, simply use this plugin: [vite-tsconfig-paths](https://www.npmjs.com/package/vite-tsconfig-paths)
+```tsx
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tsconfigPaths from 'vite-tsconfig-paths';
 
-  export default defineConfig({
-    plugins: [react(), tsconfigPaths()],
-    // other config options...
-  });
-  ```
+export default defineConfig({
+  plugins: [react(), tsconfigPaths()],
+  // other config options...
+});
+```
 
 
 ##### References:

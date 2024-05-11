@@ -90,6 +90,7 @@ That’s it. With these simple steps, you have moved away from CRA to Vite. You 
 
 
 <br><br>
+
 # Extras
 
 ## Install Tailwind CSS in a Vite Project
@@ -105,7 +106,7 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
-#### 3. Add your template files to `tailwind.config.js`.
+#### 3. Add your template files to `tailwind.config.js`
 ```bash
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -124,7 +125,7 @@ export default {
 
 Path mapping in TypeScript allows developers to define aliases for directory paths, making it easier to reference files and directories. You can improve code readability with this feature. 
 
-You can set up path mapping in tsconfig.json like this:
+You can set up path mapping in `tsconfig.json` like this:
 
 ```json
 {
@@ -153,7 +154,7 @@ More details can be found here: <https://www.typescriptlang.org/tsconfig/#paths>
 
 To use alias imports in a Vite project, you either add the aliases to the `resolve.alias` option or simply use a plugin.
 
-#### 1. Add aliases to vite.config.ts.
+#### 1. Add aliases to `vite.config.ts`
 ```tsx
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'

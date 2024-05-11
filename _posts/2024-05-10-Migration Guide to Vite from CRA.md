@@ -7,6 +7,7 @@ header:
 tags:
   - React
   - Vite
+classes: wide
 # toc: true
 ---
 
@@ -57,6 +58,7 @@ mv public/index.html .
   </head>
   <body>
     <div id="root"></div>
+    <!-- Update this part -->
     <script type="module" src="/src/index.tsx"></script>
   </body>
 </html>
@@ -106,10 +108,11 @@ npx tailwindcss init -p
 ```
 
 #### 3. Add your template files to `tailwind.config.js`
-```bash
+```js
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
+    // add all of your template files
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],

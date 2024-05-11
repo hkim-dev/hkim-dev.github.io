@@ -1,6 +1,6 @@
 ---
 title: "Migration Guide to Vite from CRA"
-date: 2024-05-11 15:00:00 -0400
+date: 2024-05-10 15:00:00 -0400
 categories: "frontend"
 header:
   teaser: "/assets/images/vite.png"

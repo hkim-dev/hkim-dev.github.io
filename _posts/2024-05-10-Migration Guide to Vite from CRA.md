@@ -27,7 +27,6 @@ Create React App (CRA) has long served as a reliable starting point for React pr
   ```bash
   npm install vite @vitejs/plugin-react --save-dev
   ```
-
   For more information on Vite plugins, visit: [Vite Plugins Documentation](https://main.vitejs.dev/plugins/).
 
 3. Modify your `package.json` and add the following scripts.
@@ -43,7 +42,6 @@ Create React App (CRA) has long served as a reliable starting point for React pr
 
 4. Move `index.html` to the root directory.
   CRA uses `public/index.html` for the default entry point, while Vite looks for the file in the root directory. 
-
   ```bash
   mv public/index.html .
   ```
@@ -85,7 +83,6 @@ Create React App (CRA) has long served as a reliable starting point for React pr
     }
   });
   ```
-
   For more details about configuration options for Vite, visit: [Vite Configuration Docs](https://vitejs.dev/config/).
 
 That’s it. With these simple steps, you have moved away from CRA to Vite. You can now start a dev server for your React app with `npm start`.

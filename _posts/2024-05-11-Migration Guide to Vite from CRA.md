@@ -1,6 +1,6 @@
 ---
-title: "Managing Large Files in Git: Removing Files from History"
-date: 2024-04-04 15:00:00 -0400
+title: "Migration Guide to Vite from CRA"
+date: 2024-05-11 15:00:00 -0400
 categories: "frontend"
 header:
   teaser: "/assets/images/vite.png"

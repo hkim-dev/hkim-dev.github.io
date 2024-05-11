@@ -47,7 +47,7 @@ Create React App (CRA) has long served as a reliable starting point for React pr
   ```
 
 5. Update the script tag in your `index.html` to link the `index.tsx` file.
-  ```html
+  ```
   <!DOCTYPE html>
   <html lang="en">
     <head>

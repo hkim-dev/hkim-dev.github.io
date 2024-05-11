@@ -42,7 +42,6 @@ Create React App (CRA) has long served as a reliable starting point for React pr
   ```
 
 4. Move `index.html` to the root directory.
-
   CRA uses `public/index.html` for the default entry point, while Vite looks for the file in the root directory. 
 
   ```bash
@@ -50,7 +49,6 @@ Create React App (CRA) has long served as a reliable starting point for React pr
   ```
 
 5. Update the script tag in your `index.html` to link the `index.tsx` file.
-
   ```html
   <!DOCTYPE html>
   <html lang="en">
@@ -66,7 +64,6 @@ Create React App (CRA) has long served as a reliable starting point for React pr
   ```
 
 6. Create `vite.config.ts` at the root of your project.
-
   ```tsx
   import { defineConfig } from 'vite'
   import react from '@vitejs/plugin-react'
@@ -102,19 +99,16 @@ That’s it. With these simple steps, you have moved away from CRA to Vite. You 
 If you have been using Tailwind CSS with CRA, you can easily set up Tailwind CSS in a Vite project following these steps:
 
 1. Install required dependencies.
-
   ```bash
   npm install -D tailwindcss postcss autoprefixer
   ```
 
 2. Create `tailwind.config.js` and `postcss.config.js` with the following command.
-
   ```bash
   npx tailwindcss init -p
   ```
 
 3. Add your template files to `tailwind.config.js`.
-
   ```bash
   /** @type {import('tailwindcss').Config} */
   export default {
@@ -163,7 +157,6 @@ More details can be found here: <https://www.typescriptlang.org/tsconfig/#paths>
 To use alias imports in a Vite project, you either add the aliases to the `resolve.alias` option or simply use a plugin.
 
 1. Add aliases to vite.config.ts.
-
   ```tsx
   import { defineConfig } from 'vite'
   import react from '@vitejs/plugin-react'
@@ -181,7 +174,6 @@ To use alias imports in a Vite project, you either add the aliases to the `resol
   ```
 
 2. Or, simply use this plugin: [vite-tsconfig-paths](https://www.npmjs.com/package/vite-tsconfig-paths)
-
   ```tsx
   import { defineConfig } from 'vite'
   import react from '@vitejs/plugin-react'

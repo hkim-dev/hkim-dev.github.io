@@ -19,80 +19,77 @@ Create React App (CRA) has long served as a reliable starting point for React pr
 # Migration Steps
 
 1. First, remove CRA from your project.
-
-```bash
-npm uninstall react-scripts
-```
+  ```bash
+  npm uninstall react-scripts
+  ```
 
 2. Install Vite dependencies.
+  ```bash
+  npm install vite @vitejs/plugin-react --save-dev
+  ```
 
-```bash
-npm install vite @vitejs/plugin-react --save-dev
-```
-
-For more information on Vite plugins, visit: [Vite Plugins Documentation](https://main.vitejs.dev/plugins/).
+  For more information on Vite plugins, visit: [Vite Plugins Documentation](https://main.vitejs.dev/plugins/).
 
 3. Modify your `package.json` and add the following scripts.
-
-```json
-{
-  "scripts": {
-    "dev": "vite", // start dev server, aliases: `vite dev`, `vite serve`
-    "build": "vite build", // build for production
-    "preview": "vite preview" // locally preview production build
+  ```json
+  {
+    "scripts": {
+      "dev": "vite", // start dev server, aliases: `vite dev`, `vite serve`
+      "build": "vite build", // build for production
+      "preview": "vite preview" // locally preview production build
+    }
   }
-}
-```
+  ```
 
 4. Move `index.html` to the root directory.
 
-CRA uses `public/index.html` for the default entry point, while Vite looks for the file in the root directory. 
+  CRA uses `public/index.html` for the default entry point, while Vite looks for the file in the root directory. 
 
-```bash
-mv public/index.html .
-```
+  ```bash
+  mv public/index.html .
+  ```
 
 5. Update the script tag in your `index.html` to link the `index.tsx` file.
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/index.tsx"></script>
-  </body>
-</html>
-```
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+      <div id="root"></div>
+      <script type="module" src="/src/index.tsx"></script>
+    </body>
+  </html>
+  ```
 
 6. Create `vite.config.ts` at the root of your project.
 
-```tsx
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+  ```tsx
+  import { defineConfig } from 'vite'
+  import react from '@vitejs/plugin-react'
 
-export default defineConfig({
-  plugins: [react()],
-  server: {    
-    open: true,
-    port: 3000,
-  },
-  build: {
-    target: 'esnext',
-    outDir: './dist',
-    rollupOptions: {
-      input: {
-        main: './index.html'
+  export default defineConfig({
+    plugins: [react()],
+    server: {    
+      open: true,
+      port: 3000,
+    },
+    build: {
+      target: 'esnext',
+      outDir: './dist',
+      rollupOptions: {
+        input: {
+          main: './index.html'
+        }
       }
     }
-  }
-});
-```
+  });
+  ```
 
-For more details about configuration options for Vite, visit: [Vite Configuration Docs](https://vitejs.dev/config/).
+  For more details about configuration options for Vite, visit: [Vite Configuration Docs](https://vitejs.dev/config/).
 
 That’s it. With these simple steps, you have moved away from CRA to Vite. You can now start a dev server for your React app with `npm start`.
 
@@ -106,31 +103,31 @@ If you have been using Tailwind CSS with CRA, you can easily set up Tailwind CSS
 
 1. Install required dependencies.
 
-```bash
-npm install -D tailwindcss postcss autoprefixer
-```
+  ```bash
+  npm install -D tailwindcss postcss autoprefixer
+  ```
 
 2. Create `tailwind.config.js` and `postcss.config.js` with the following command.
 
-```bash
-npx tailwindcss init -p
-```
+  ```bash
+  npx tailwindcss init -p
+  ```
 
 3. Add your template files to `tailwind.config.js`.
 
-```bash
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
+  ```bash
+  /** @type {import('tailwindcss').Config} */
+  export default {
+    content: [
+      "./index.html",
+      "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  }
+  ```
 
 ## Path Mapping
 
@@ -167,34 +164,34 @@ To use alias imports in a Vite project, you either add the aliases to the `resol
 
 1. Add aliases to vite.config.ts.
 
-```tsx
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+  ```tsx
+  import { defineConfig } from 'vite'
+  import react from '@vitejs/plugin-react'
 
-export default defineConfig({
-  plugins: [react()],
-	resolve: {
-    alias: {
-      "@components": path.resolve(__dirname, "src/components"),
-      "@pages": path.resolve(__dirname, "src/pages"),
-      "@utils": path.resolve(__dirname, "src/utils")
+  export default defineConfig({
+    plugins: [react()],
+    resolve: {
+      alias: {
+        "@components": path.resolve(__dirname, "src/components"),
+        "@pages": path.resolve(__dirname, "src/pages"),
+        "@utils": path.resolve(__dirname, "src/utils")
+      },
     },
-  },
-});
-```
+  });
+  ```
 
 2. Or, simply use this plugin: [vite-tsconfig-paths](https://www.npmjs.com/package/vite-tsconfig-paths)
 
-```tsx
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tsconfigPaths from 'vite-tsconfig-paths';
+  ```tsx
+  import { defineConfig } from 'vite'
+  import react from '@vitejs/plugin-react'
+  import tsconfigPaths from 'vite-tsconfig-paths';
 
-export default defineConfig({
-  plugins: [react(), tsconfigPaths()],
-  // other config options...
-});
-```
+  export default defineConfig({
+    plugins: [react(), tsconfigPaths()],
+    // other config options...
+  });
+  ```
 
 
 ##### References:

@@ -46,7 +46,7 @@ For more information on Vite plugins, visit: [Vite Plugins Documentation](https:
 
 4. Move `index.html` to the root directory.
 
-CRA uses public/index.html for the default entry point, while Vite looks for the file in the root directory. 
+CRA uses `public/index.html` for the default entry point, while Vite looks for the file in the root directory. 
 
 ```bash
 mv public/index.html .
@@ -161,7 +161,7 @@ import About from '@pages/About';
 import { fetchData } from '@utils/api';
 ```
 
-More details can be found here: https://www.typescriptlang.org/tsconfig/#paths
+More details can be found here: <https://www.typescriptlang.org/tsconfig/#paths>
 
 To use alias imports in a Vite project, you either add the aliases to the `resolve.alias` option or simply use a plugin.
 
@@ -183,7 +183,7 @@ export default defineConfig({
 });
 ```
 
-2. Or, simply use this plugin: https://www.npmjs.com/package/vite-tsconfig-paths
+2. Or, simply use this plugin: [vite-tsconfig-paths](https://www.npmjs.com/package/vite-tsconfig-paths)
 
 ```tsx
 import { defineConfig } from 'vite'

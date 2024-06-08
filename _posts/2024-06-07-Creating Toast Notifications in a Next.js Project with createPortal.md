@@ -8,6 +8,7 @@ tags:
   - React
   - nextjs
 toc: true
+toc_sticky: true
 ---
 
 ![toast-notification](/assets/images/nextjs-toast.png)

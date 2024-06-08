@@ -7,7 +7,6 @@ header:
 tags:
   - React
   - nextjs
-classes: wide
 toc: true
 ---
 

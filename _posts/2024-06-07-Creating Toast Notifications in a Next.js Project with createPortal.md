@@ -154,8 +154,9 @@ Add some basic styles for the toast notifications in `styles/toast.css`.
 
 
 # Step 2. Create the Toast Portal with `createPortal`
-Import the `Toast` component we just created. We use React's `createPortal` to render toast notifications at a root level so they appear above all other components. In this code, the root-level container is selected using `querySelector`. Read more about `createPortal` here: <https://react.dev/reference/react-dom/createPortal>
-Also note that the `mounted` variable is in place to check if the DOM is available before we try to query it. The `mounted` state is set to `true` after the initial render. For more details on using portals in Next.js refer to the offical example [here](https://github.com/vercel/next.js/blob/main/examples/with-portals/components/ClientOnlyPortal.js).
+Import the `Toast` component we just created. We use React's `createPortal` to render toast notifications at a root level so they appear above all other components. In this code, the root-level container is selected using `querySelector`. Read more about `createPortal` here: <https://react.dev/reference/react-dom/createPortal>.
+
+Also note that the `mounted` variable is in place to check if the DOM is available before we try to query it. The `mounted` state is set to `true` after the initial render. For more details on using portals in Next.js refer to the [offical example](https://github.com/vercel/next.js/blob/main/examples/with-portals/components/ClientOnlyPortal.js).
 
 ```typescript
 "use client";

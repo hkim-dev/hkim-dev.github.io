@@ -1,6 +1,6 @@
 ---
 title: "Creating Toast Notifications in a Next.js Project with `createPortal`"
-date: 2024-06-08 17:00:00 -0400
+date: 2024-06-07 17:00:00 -0400
 categories: "frontend"
 header:
   teaser: "/assets/images/nextjs-toast.png"

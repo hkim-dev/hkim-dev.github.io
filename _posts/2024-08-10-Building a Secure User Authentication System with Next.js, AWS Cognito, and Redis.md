@@ -24,7 +24,7 @@ In this article, I’ll walk you through a project where I developed a secure an
 # Project Setup
 The project is structured as a Next.js application, bootstrapped with create-next-app. Below are the steps to get started:
 
-### 1. Environment Variables
+## 1. Environment Variables
 You’ll need to set up a .env.local file at the root of your project directory:
 
 ```
@@ -39,7 +39,7 @@ REDIS_PORT=<< value >>
 
 Replace the placeholders with actual values from your AWS Cognito setup and Redis instance.
 
-### 2. Running the Development Server
+## 2. Running the Development Server
 Once the environment variables are in place, start the development server with:
 
 ```bash

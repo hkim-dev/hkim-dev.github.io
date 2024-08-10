@@ -1,6 +1,6 @@
 ---
 title: Building a Secure User Authentication System with Next.js, AWS Cognito, and Redis
-date: 2024-08-10 17:00:00 -0400
+date: 2024-08-10 01:00:00 -0400
 categories: "frontend"
 header:
   teaser: "/assets/images/user-auth.svg"

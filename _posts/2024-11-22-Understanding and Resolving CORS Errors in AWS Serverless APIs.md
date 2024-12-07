@@ -14,20 +14,20 @@ toc_sticky: true
 # Introduction
 Have you ever tested an API using `curl` or `postman` and thought the API is good to be integrated with your web interface, only to find it breaks in the browser? It certainly happened to me when I was working on a Lambda API. And once again, I found myself encounter the CORS error when using the API from a browser. I previously delved into CORS errors arising from S3 and Cloudfront configuration in one of the articles, however, I'd like to discuss how to resolve such errors in the context of AWS serverless API development. I'll also share my terraform code for managing API infrastructure.
 
-# Technology Stack
+## Technology Stack
 The technologies included in this article is as follows:
 
-#### AWS
+### AWS
 - Lambda
 - API Gateway
-#### IaC
+### IaC
 - Terraform
-#### Python Libraries
+### Python Libraries
 - FastAPI
 - Magnum
 
 
-# CORS
+## CORS
 ![cors-error](/assets/images/cors-error.png)
 
 To put it simply, CORS errors essentially occur due to the [same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) that restricts cross-origin HTTP requests initiated from scripts. What is a cross-origin request? An example would be your frontend running on `http://localhost:3000` and using `fetch()` to access your backend API hosted at `https://api.example.com`.
@@ -37,7 +37,7 @@ Browsers make a `preflight` requests to the server with the cross-origin resourc
 An origin is the combination of protocol (http, https), domain (myapp.com, localhost, localhost.tiangolo.com), and port (80, 443, 8080).
 
 
-# The Solution: Adding CORS Middleware In Lambda
+## The Solution: Adding CORS Middleware In Lambda
 The fix was fairly simple: I needed to add CORS headers to API responses. Since I was using FastAPI for my Lambda function, I leveraged its built-in `CORSMiddleware`. Here's how to set it up:
 
 ```python
@@ -62,7 +62,7 @@ This middleware ensures that every response includes the appropriate CORS header
 While allow_origins=["*"] is useful during development, consider restricting origins to trusted domains in production for security reasons. For example: allow_origins=["https://myapp.com"].
 
 
-# Implementing Infrastructure with Terraform
+## Implementing Infrastructure with Terraform
 While the article mainly focuses on resolving CORS errors, understanding how to set up the Lambda function and API Gateway is crucial for a serverless API. Below is a detailed Terraform configuration for deploying a Lambda-based API using API Gateway.
 
 ### Terraform Configuration

@@ -15,19 +15,17 @@ toc_sticky: true
 Have you ever tested an API using `curl` or `postman` and thought the API is good to be integrated with your web interface, only to find it breaks in the browser? It certainly happened to me when I was working on a Lambda API. And once again, I found myself encounter the CORS error when using the API from a browser. I previously delved into CORS errors arising from S3 and Cloudfront configuration in one of the articles, however, I'd like to discuss how to resolve such errors in the context of AWS serverless API development. I'll also share my terraform code for managing API infrastructure.
 
 # Technology Stack
-
 The technologies included in this article is as follows:
 
-### AWS
+#### AWS
 - Lambda
 - API Gateway
-
-### IaC
+#### IaC
 - Terraform
-
-### Python Libraries
+#### Python Libraries
 - FastAPI
 - Magnum
+
 
 # CORS
 ![cors-error](/assets/images/cors-error.png)
@@ -61,7 +59,7 @@ This middleware ensures that every response includes the appropriate CORS header
 
 
 {: .notice--info}
-** Note: ** While allow_origins=["*"] is useful during development, consider restricting origins to trusted domains in production for security reasons. For example: allow_origins=["https://myapp.com"].
+While allow_origins=["*"] is useful during development, consider restricting origins to trusted domains in production for security reasons. For example: allow_origins=["https://myapp.com"].
 
 
 # Implementing Infrastructure with Terraform
@@ -184,7 +182,6 @@ resource "aws_api_gateway_integration" "proxy_integration" {
 
 resource "aws_api_gateway_deployment" "api_gateway_deployment" {
   rest_api_id = aws_api_gateway_rest_api.api_gateway.id
-  stage_name  = "dev"
 
   depends_on = [
     aws_api_gateway_integration.proxy_integration
@@ -203,10 +200,7 @@ resource "aws_lambda_permission" "lambda_permission" {
 output "api_endpoint" {
   value = aws_api_gateway_rest_api.api_gateway.execution_arn
 }
-
 ```
-
-#### Key Notes
 The Lambda function's permissions should be updated according to your API requirements (e.g., access to DynamoDB, S3, or other services). This is demonstrated with a custom policy in the example.
 
 ##### reference:

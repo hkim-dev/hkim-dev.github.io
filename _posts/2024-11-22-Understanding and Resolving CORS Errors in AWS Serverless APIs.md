@@ -7,8 +7,7 @@ header:
 tags:
   - AWS
   - API
-toc: true
-toc_sticky: true
+toc: false
 ---
 
 # Introduction
@@ -20,8 +19,10 @@ The technologies included in this article is as follows:
 ### AWS
 - Lambda
 - API Gateway
+
 ### IaC
 - Terraform
+
 ### Python Libraries
 - FastAPI
 - Magnum
@@ -203,5 +204,7 @@ output "api_endpoint" {
 ```
 The Lambda function's permissions should be updated according to your API requirements (e.g., access to DynamoDB, S3, or other services). This is demonstrated with a custom policy in the example.
 
-##### reference:
+
+
+Reference:
 - <https://fastapi.tiangolo.com/tutorial/cors/#use-corsmiddleware>

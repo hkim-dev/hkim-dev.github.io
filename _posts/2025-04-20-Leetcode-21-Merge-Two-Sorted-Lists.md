@@ -13,7 +13,7 @@ classes: wide
 This problem is about merging two "sorted" linked lists into one sorted list. It is a good problem to practice working with linked lists and very common in interviews. In this article, I'll discuss the approach I took and techniques used in the solution.
 
 ## Problem Statement
-You can find the full description here: [link] (https://leetcode.com/problems/merge-two-sorted-lists/)
+You can find the full description here: (link)[https://leetcode.com/problems/merge-two-sorted-lists/]
 
 - **Given:** Two sorted linked lists 
 - **Goal:** Return the head of the merged list

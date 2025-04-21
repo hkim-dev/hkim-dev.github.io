@@ -1,11 +1,12 @@
 ---
 title: Leetcode 21 Merge Two Sorted Lists - Problem Solving & Intuition
 date: 2025-04-20 23:00:00 -0400
-categories: "Problem Solving"
+categories: "Problem-Solving"
 tags:
   - Leetcode
   - Python
 toc: false
+classes: wide
 ---
 
 
@@ -14,8 +15,8 @@ This problem is about merging two "sorted" linked lists into one sorted list. It
 ## Problem Statement
 You can find the full description here: [link] (https://leetcode.com/problems/merge-two-sorted-lists/)
 
-**Given:** Two sorted linked lists 
-**Goal:** Return the head of the merged list
+- **Given:** Two sorted linked lists 
+- **Goal:** Return the head of the merged list
 
 ## My Thought Process
 Using two pointers was the obvious choice here. They are even given as the parameters - `list1` and `list2`. As the lists are already sorted, meaning the nodes are in the ascending order, so we can use the given pointers to determine which one is pointing to a smaller node. Whichever points to a smaller value should move on to the next one, and we should keep repeating it until there is no more node.

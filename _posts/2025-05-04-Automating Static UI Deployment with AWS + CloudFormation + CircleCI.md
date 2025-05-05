@@ -65,6 +65,28 @@ CircleCI handles the build and deployment pipeline from start to finish:
 
 You can manage environment-specific settings using [CircleCI contexts](https://circleci.com/docs/contexts/), and secure credentials via environment variables.
 
+Plus, to make the workflow more manageable, I split the build and deploy jobs and added an approval gate. I also used `workspace` to persist the `/dist` files between the build and deploy jobs.
+
+```yaml
+workflows:
+  build-and-deploy-dev:
+    jobs:
+      - build_ui:
+          context:
+            - global-context
+            - dev-context
+      - hold_deploy_dev:
+          type: approval
+          requires:
+            - build_ui
+      - deploy_to_aws:
+          context:
+            - global-context
+            - dev-context
+          requires:
+            - hold_deploy_dev
+```
+
 ## Mock UI
 I created a mock React app with Vite for demonstration purposes. You can swap it out with your own static frontend by replacing the /sample-ui directory.
 

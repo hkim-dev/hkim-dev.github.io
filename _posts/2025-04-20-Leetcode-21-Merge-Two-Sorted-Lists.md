@@ -1,5 +1,5 @@
 ---
-title: Leetcode 21 Merge Two Sorted Lists - Problem Solving & Intuition
+title: Leetcode 21 - Merge Two Sorted Lists
 date: 2025-04-20 23:00:00 -0400
 categories: "Problem-Solving"
 tags:

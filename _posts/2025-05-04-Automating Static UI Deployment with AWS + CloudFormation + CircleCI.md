@@ -6,13 +6,13 @@ tags:
   - AWS
 toc: true
 toc_sticky: true
-classes: wide
+# classes: wide
 ---
 
 # Introduction
 In this post, I'm sharing a template project for automating the build & deployment of single page applications (SPA). I often build and deploy SPAs at work, and after doing this a few times manually, I figured it was time to put together a clean & reusable setup. Feel free to check out the repo here for the full code:
 
-👉 https://github.com/hkim-dev/infra-static-ui-deploy
+👉 <https://github.com/hkim-dev/infra-static-ui-deploy>
 
 So this small project aims to:
 

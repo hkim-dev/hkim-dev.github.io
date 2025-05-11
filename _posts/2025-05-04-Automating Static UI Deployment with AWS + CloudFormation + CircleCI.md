@@ -91,4 +91,4 @@ workflows:
 I created a mock React app with Vite for demonstration purposes. You can swap it out with your own static frontend by replacing the /sample-ui directory.
 
 # 📝 Wrapping Up
-This project was something I actually built a while ago at work while deploying SPAs on AWS - revisiting it reminded me of how important it is to have a clean and consistent pipeline for UI deployments. I hope it can be a useful starting point for anyone looking to automate static UI hosting.
+I created this project to explore best practices for automating static SPA deployments on AWS. It draws from lessons I’ve learned through prior experience and aims to offer a clean, modular example for others to build on. I hope it can be a useful starting point for anyone looking to automate static UI hosting.
